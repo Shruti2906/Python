@@ -1,0 +1,1 @@
+print('hello')#String to be printed could be in double quote or single quote

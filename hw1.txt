@@ -1,0 +1,10 @@
+while(True):
+	print('1-Area of Circle ')
+	print('2-Area of Triangle')
+	print('3-Area of Rect')
+
+	printf('4-Factor');   
+	printf('5-Factorial');
+	printf('6-Prime');
+	printf('7-Power');
+	printf('8-reverse');
