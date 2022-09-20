@@ -6,6 +6,7 @@ class Employee:
          self.salary = input("Enter Employee Salary : ")
 
      def display(self):
+
          print("Employee id : ",self.eid)
          print("Employee Name : ",self.ename)
          print("Employee Salary : ",self.salary)
@@ -18,6 +19,7 @@ class Employee:
          return False;
 
      def delete(self, id):
+
          for x in range(len(emplst)):
             e = Employee()
             if(e.search(id)):
@@ -26,7 +28,7 @@ class Employee:
 
 emplst = []
 
-print("************************************ Employee Management CRUD ***************************************")
+print("\n\n\n************************************ Employee Management CRUD ***************************************")
 
 while(True):
     print("1 : Create Employee List \n2 : Display Empoyee List \n3 : Search Employee from Employee List \n4 : Delete Employee From Employee List\n5 : Insert ")
@@ -42,11 +44,17 @@ while(True):
                 continue
             break;
     if(ch == 2):
-        print("============================ Employee Details ============================")
-        for x in range(len(emplst)):
-            e = emplst[x]
-            e.display()
+        if(len(emplst) > 0):
+            print("============================ Employee Details ============================")
+            for x in range(len(emplst)):
+                e = emplst[x]
+                e.display()
+                print("---------------------------------------------------------------------")
+        else:
             print("---------------------------------------------------------------------")
+            print("No Records Found..!!")
+            print("---------------------------------------------------------------------")
+
     if(ch == 3):
         id = int(input("Enter employee Id to Search Employee : "))
         e = Employee()
@@ -59,6 +67,7 @@ while(True):
             print("Employee Not Found ..!!")
             print("---------------------------------------------------------------------")
     if(ch == 4):
+
         id = int(input("Enter Employee Id to Delete Employee : "))
         e = Employee()
         if(e.search(id)):
@@ -83,5 +92,7 @@ while(True):
         continue
     break;
 
-print("Thank You ..!!")
+print("\n---------------------------------------------------------------------")
+print("\n\tThank You ..!!")
+print("---------------------------------------------------------------------")
 
