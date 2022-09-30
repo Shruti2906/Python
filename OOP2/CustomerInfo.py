@@ -40,17 +40,17 @@ class CustomerInfo:
         print("============================= Customer Details =============================")
         for x in range(len(lst)):
             e = lst[x]
-            print("\t\tCustomer id\t\t:\t\t", e.cid)
-            print("\t\tCustomer Name\t\t:\t\t", e.cname)
-            print("\t\tCustomer Salary\t\t:\t\t", e.csal)
+            print(f"\t\tCustomer id\t\t\t:\t\t{e.cid}")
+            print(f"\t\tCustomer Name\t\t:\t\t{e.cname}")
+            print(f"\t\tCustomer Salary\t\t:\t\t{e.csal}")
 
-            print("\t\tCustomer City\t\t:\t\t",e.addr._city)
-            print("\t\tCustomer State\t\t:\t\t", e.addr._state)
-            print("\t\tCustomer Pincode\t\t:\t\t", e.addr._pincode)
+            print(f"\t\tCustomer City\t\t:\t\t{e.addr._city}")
+            print(f"\t\tCustomer State\t\t:\t\t{e.addr._state}")
+            print(f"\t\tCustomer Pincode\t:\t\t{e.addr._pincode}")
 
-            print("\t\tAccount No\t\t:\t\t",e.acc.accNo)
-            print("\t\tCustomer Type\t\t:\t\t", e.acc.accType)
-            print("\t\tCustomer Balance\t\t:\t\t", e.acc.accBal)
+            print(f"\t\tAccount No\t\t\t:\t\t{e.acc.accNo}")
+            print(f"\t\tCustomer Type\t\t:\t\t{e.acc.accType}")
+            print(f"\t\tCustomer Balance\t:\t\t{e.acc.accBal}")
 
             print("\n---------------------------------------------------------------------------")
 
