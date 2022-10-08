@@ -7,10 +7,6 @@ class Customer:
         self._csal = csal
         self._addr = addr
         self._acc = acc
-#attributes behaves lilke setter, getters and deleter    OR   getter, setter can be used as attributes
-#when value is assigned to an attriute automatically setter will be called
-#when value is assigned from an attriute (or while printing it) automatically getter will be called
-#when del is used with an attriute automatically deletter will be called
 
     @property
     def cid(self):
@@ -70,13 +66,3 @@ class Customer:
 
 
 
-'''
-e = Employee1()
-e.eid = 10
-e.ename = 'aaa'
-e.esal = 10000
-
-print(e.eid)
-print(e.ename)
-print(e.esal)
-'''

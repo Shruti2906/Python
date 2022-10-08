@@ -20,8 +20,8 @@ while True:
 
     elif ch == 3:
         id = int(input("\t\tEnter Customer Id : "))
-        e = custInfo.search(lst, id)
-        if(e != None):
+        c = custInfo.search(lst, id)
+        if(c != None):
             print("-----------------------------------------------------------------------")
             print("\t\tCustomer Found..!!")
             print("-----------------------------------------------------------------------")

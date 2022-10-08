@@ -88,17 +88,17 @@ class CustomerInfo:
 
         acc = Account(accno, acctype, accBal)
         addr = Address(city, state, pincode)
-        e = Customer(cid, cname, csal, addr, acc)
+        c = Customer(cid, cname, csal, addr, acc)
 
-        lst.append(e)
+        lst.append(c)
         return lst
 
     def tracsactions(self, lst, id):
 
-        e = self.search(lst, id)
-        if (e != None):
+        c = self.search(lst, id)
+        if (c != None):
 
-                acctrans = AccountTransaction(e, id)
+                acctrans = AccountTransaction(c, id)
 
                 ch = int(input("\n\t\t\t1 : Deposit\t\t2 : Withdraw\t"))
                 if(ch == 1):
